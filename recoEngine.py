@@ -6,9 +6,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #Storing the movie information into a pandas dataframe
-movies_df = pd.read_csv('/Users/anipandey/Documents/ML/coursera/ml-latest/movies.csv')
+movies_df = pd.read_csv('movies.csv')
 #Storing the user information into a pandas dataframe
-ratings_df = pd.read_csv('/Users/anipandey/Documents/ML/coursera/ml-latest/ratings.csv')
+ratings_df = pd.read_csv('ratings.csv')
 #Head is a function that gets the first N rows of a dataframe. N's default is 5.
 movies_df.head()
 
