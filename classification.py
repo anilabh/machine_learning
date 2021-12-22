@@ -14,7 +14,7 @@ from sklearn.metrics import jaccard_score
 import itertools
 
 def KNN():
-    df = pd.read_csv("/Users/anipandey/Documents/ML/coursera/teleCust1000t.csv")
+    df = pd.read_csv("teleCust1000t.csv")
     # take a look at the dataset
     df.head()
     #fidn number of categories
@@ -76,7 +76,7 @@ def KNN():
     print( "The best accuracy was with", mean_acc.max(), "with k=", mean_acc.argmax()+1) 
 
 def decisionTii():
-    my_data = pd.read_csv("/Users/anipandey/Documents/ML/coursera/drug200.csv", delimiter=",")
+    my_data = pd.read_csv("drug200.csv", delimiter=",")
     # take a look at the dataset
     my_data[0:5]
     
@@ -264,7 +264,7 @@ def plot_confusion_matrix_svm(cm, classes,
     plt.show()
 
 def SVM():#support vector machine
-    cell_df = pd.read_csv("/Users/anipandey/Documents/ML/coursera/cell_samples.csv")
+    cell_df = pd.read_csv("cell_samples.csv")
     cell_df.head()
     #Lets look at the distribution of the classes based on Clump thickness and Uniformity of cell size
     ax = cell_df[cell_df['Class'] == 4][0:50].plot(kind='scatter', x='Clump', y='UnifSize', color='DarkBlue', label='malignant');
