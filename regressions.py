@@ -6,7 +6,7 @@ import numpy as np
 from sklearn import preprocessing
 
 def simpleLinearReg():
-    df = pd.read_csv("/Users/anipandey/Documents/ML/coursera/FuelConsumptionCo2.csv")
+    df = pd.read_csv("FuelConsumptionCo2.csv")
 
     # take a look at the dataset
     df.head()
@@ -51,7 +51,7 @@ def simpleLinearReg():
     print("R2-score: %.2f" % r2_score(test_y , test_y_) )
 
 def multipleLinearReg():
-    df = pd.read_csv("/Users/anipandey/Documents/ML/coursera/FuelConsumptionCo2.csv")
+    df = pd.read_csv("FuelConsumptionCo2.csv")
     # take a look at the dataset
     df.head()
     
@@ -93,7 +93,7 @@ def multipleLinearReg():
     print('Variance score: %.2f' % regr.score(x, y))
 
 def polynomialReg():
-    df = pd.read_csv("/Users/anipandey/Documents/ML/coursera/FuelConsumptionCo2_nonL.csv")
+    df = pd.read_csv("FuelConsumptionCo2_nonL.csv")
     # take a look at the dataset
     df.head()
     cdf = df[['ENGINESIZE','CYLINDERS','FUELCONSUMPTION_COMB','CO2EMISSIONS']]
@@ -145,7 +145,7 @@ def sigmoid(x, Beta_1, Beta_2):
      return y
 
 def nonLReg():
-    df = pd.read_csv("/Users/anipandey/Documents/ML/coursera/china_gdp.csv")
+    df = pd.read_csv("china_gdp.csv")
     df.head(10)
     plt.figure(figsize=(8,5))
     x_data, y_data = (df["Year"].values, df["Value"].values)
